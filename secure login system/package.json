@@ -1,0 +1,23 @@
+{
+  "name": "secure-login-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A secure login system with bcrypt password hashing, SQLite, validation, sessions, CSRF protection, and rate limiting.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test --test-force-exit"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-sqlite3": "^0.9.15",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
